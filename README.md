@@ -45,7 +45,7 @@ language and layout model while still using the same ISA encoders.
 With Zig 0.17, add the package to a consumer project with `zig fetch`:
 
 ```powershell
-zig fetch --save git+https://codeberg.org/kukuyun/xirasm-lib.git
+zig fetch --save git+https://github.com/XIRASM/XirAsm-lib.git
 ```
 
 That command adds a dependency entry to the consumer project's
@@ -54,7 +54,7 @@ That command adds a dependency entry to the consumer project's
 ```zon
 .dependencies = .{
     .xirasm_lib = .{
-        .url = "git+https://codeberg.org/kukuyun/xirasm-lib.git",
+        .url = "git+https://github.com/XIRASM/XirAsm-lib.git",
         .hash = "...",
     },
 }

@@ -1,4 +1,4 @@
-//! Generated source fixture. Do not edit manually.
+//! Generated file. Do not edit.
 //! Do not edit by hand.
 //! This checks native RISC-V source/text parsing against the public encoder API.
 

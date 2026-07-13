@@ -74,7 +74,7 @@ The parser is instruction-level native RISC-V syntax, not GNU as compatibility.
 It may project CSR names, fence masks, rounding modes, atomic suffixes, vector
 mask spelling, and load/store offset forms into the existing encoder operands.
 
-It must not grow GAS directives, relocation expressions, section state, macro
+It must not grow external assembler directives, relocation expressions, section state, macro
 syntax, or pseudo-instruction expansion that needs multiple backend calls. Those
 belong in the frontend.
 

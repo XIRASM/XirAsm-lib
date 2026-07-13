@@ -119,7 +119,7 @@ The x86 backend owns:
 - register and operand parsing at instruction level;
 - template matching;
 - instruction size calculation;
-- byte emission through the generated NASM-derived tables.
+- byte emission through the generated instruction tables.
 
 The x86 backend must not own:
 

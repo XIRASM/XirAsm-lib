@@ -1,4 +1,4 @@
-// Generated source table. Do not edit manually.
+// Generated file. Do not edit.
 // Do not edit by hand.
 
 const types = @import("types.zig");
