@@ -59,6 +59,14 @@ pub fn build(b: *std.Build) void {
     }
 
     if (!exclude_spirv) {
+        const spirv_text_mod = b.createModule(.{
+            .root_source_file = b.path("src/spirv_encoder/text.zig"),
+            .target = b.graph.host,
+            .optimize = optimize,
+        });
+        const spirv_text_test = b.addTest(.{ .root_module = spirv_text_mod });
+        test_step.dependOn(&b.addRunArtifact(spirv_text_test).step);
+
         const spirv_encoder_mod = b.createModule(.{
             .root_source_file = b.path("tests/spirv_encoder.zig"),
             .target = b.graph.host,
