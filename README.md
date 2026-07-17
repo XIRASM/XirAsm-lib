@@ -221,6 +221,6 @@ docs/                  backend contract and frontend integration notes
 
 ## Version
 
-Current version: `0.1.2`.
+Current version: `0.1.3`.
 
 The same version is recorded in `VERSION` and `build.zig.zon`.
